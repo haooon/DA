@@ -1,0 +1,10 @@
+.pt-page {
+	width: 100%;
+	position: absolute;
+	visibility: hidden;
+}
+.pt-page-current,
+.no-js .pt-page {
+	visibility: visible;
+	z-index: 1;
+}
