@@ -57,7 +57,7 @@
                     这里我们基本确定大学生主要获取参与舆情活动的方式是通过关注各大网络平台的动态内容
                     ，针对不同平台进行比较后我们最终确定了一个适合长时间跟踪的平台进行后续的跟踪分析。
                 </p>
-                <a href="/platform_choise">
+                <a href="/platform">
                     <h2 class="ui big center aligned header smallheader" style="margin-top:2em;">
                         平台的选择 >>
                     </h2>

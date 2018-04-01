@@ -30,3 +30,50 @@ myChart.setOption({
         }
     ]
 });
+
+option = {
+    color: ['#d48265',],
+    xAxis: {
+        axisLabel: {
+           interval:0,
+           rotate:40
+       },
+        type: 'category',
+        data: [
+            '合肥工业大学',
+            '合肥工业大学团委',
+            '微言合工大',
+            '合肥工业大学学生会',
+            '合工大建艺',
+            '合工大资环学院',
+            '合工大计算机与信息学院',
+            '合工大食品学院',
+            '合工大土木学院',
+            '合工大材料学院',
+            '仪器风发',
+            '工大后院儿',
+        ]
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [
+            690,
+            550,
+            400,
+            392,
+            300,
+            288,
+            280,
+            269,
+            260,
+            255,
+            217,
+            200
+        ],
+        type: 'bar'
+    }]
+};
+var myChart = echarts.init(document.getElementById('WCI'));
+myChart.setOption(option);
