@@ -1,5 +1,6 @@
 var myChart = echarts.init(document.getElementById('user_platform'));
 myChart.setOption({
+        // grid:{x: '100%', y: '100%', width: '100%', height: '100%'},
         series : [
             {
             color: ['#61a0a8', '#d48265', '#749f83', '#546570', '#c4ccd3', '#c23531', '#2f4554', '#ca8622', '#bda29a','#6e7074'],
@@ -77,3 +78,58 @@ option = {
 };
 var myChart = echarts.init(document.getElementById('WCI'));
 myChart.setOption(option);
+
+
+var myChart = echarts.init(document.getElementById('WeiBo'));
+// myChart.showLoading();
+
+$.getJSON('../data/weibo.json', function (json) {
+    // myChart.hideLoading();
+    myChart.setOption(option = {
+        // animationDurationUpdate: 2000,
+        // animationEasingUpdate: 'quinticInOut',
+        series : [
+            {
+                type: 'graph',
+                // layout: 'none',
+                // progressiveThreshold: 700,
+                data: json.nodes.map(function (node) {
+                    return {
+                        x: node.x,
+                        y: node.y,
+                        id: node.id,
+                        name: node.label,
+                        symbolSize: node.size,
+                        itemStyle: {
+                            normal: {
+                                color: node.color
+                            }
+                        }
+                    };
+                }),
+                edges: json.edges.map(function (edge) {
+                    return {
+                        source: edge.sourceID,
+                        target: edge.targetID
+                    };
+                }),
+                label: {
+                    value: '',
+                    emphasis: {
+                        position: 'bottom',
+                        show: true
+                    }
+                },
+                // roam: true,
+                focusNodeAdjacency: true,
+                lineStyle: {
+                    normal: {
+                        width: 0.6,
+                        curveness: 0.2,
+                        opacity: 0.9
+                    }
+                }
+            }
+        ]
+    }, true);
+});

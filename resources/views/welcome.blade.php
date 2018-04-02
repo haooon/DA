@@ -4,19 +4,26 @@
         <meta charset="utf-8">
         <title></title>
         <link rel="stylesheet" type="text/css" href="/css/basic.css">
+        <script src="/js/jquery-3.3.1.min.js"></script>
+        @include('import')
     </head>
-    <link rel="stylesheet" type="text/css" href="/css/fadein.css">
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            setInterval(function(){
+                $('.shape').shape('flip up');
+            }, 1000);
+        });
+    </script>
     <body>
         <div class="flex-center position-ref full-height">
-                    <div class="ui content">
-                        <div class="title m-b-md">
-                            <a href="/basic" id="iterateEffects">
-                                基于百度贴吧舆情分析报告
-                            </a>
-                        </div>
-                    </div>
+            <div class="ui content">
+                <div class="title m-b-md">
+                    <a href="/basic" id="iterateEffects">
+                        基于百度贴吧舆情分析报告
+                    </a>
                 </div>
-            @include('import')
+            </div>
+        </div>
             <style>
                 html, body {
                     background-color: #fff;
