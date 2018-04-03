@@ -17,4 +17,5 @@ Route::get('/', function () {return view('welcome');});
 Route::get('/basic', function () {return view('basic');});
 Route::get('/platform', function () {return view('platform');});
 Route::get('/crawler', function () {return view('crawler');});
-Route::get('/main', function () {return view('main');});
+Route::get('/analysis', function () {return view('analysis');});
+Route::get('/thanks', function () {return view('thanks');});

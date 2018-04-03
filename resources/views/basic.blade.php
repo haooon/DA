@@ -59,7 +59,8 @@
                 </p>
                 <a href="/platform">
                     <h2 class="ui big center aligned header smallheader" style="margin-top:2em;">
-                        平台的选择 >>
+                        平台的选择
+                        <i class="angle double right icon"></i>
                     </h2>
                 </a>
             </div>

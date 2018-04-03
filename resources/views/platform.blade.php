@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>数据的重要性</title>
+        <title>选择数据源</title>
     </head>
     <script src="/js/jquery-3.3.1.min.js"></script>
     @include('import')
@@ -93,7 +93,7 @@
 
 
 
-              <h2 class="ui big center aligned header smallheader">微博微博</h2>
+              <h2 class="ui big center aligned header smallheader">新浪微博</h2>
               <p>
                   微博数据源通过，抓包制作爬虫进行数据的收集，并尝试进行用户关系的分析
                   主要选取合肥工业大学相关的几大官方微博进行数据的跟踪分析。
@@ -195,7 +195,10 @@
                   </strong>
               </p>
 
-              <a href="/crawler"><h2 class="ui big center aligned header smallheader" style="margin-top:2em;">贴吧爬虫 >></h2></a>
+              <a href="/crawler"><h2 class="ui big center aligned header smallheader" style="margin-top:2em;">
+                  贴吧爬虫
+                  <i class="angle double right icon"></i>
+              </h2></a>
             </div>
         </div>
     </body>
