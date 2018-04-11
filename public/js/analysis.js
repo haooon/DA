@@ -1,7 +1,7 @@
 var myChart = echarts.init(document.getElementById('classify'));
     $.get('../data/flare.json', function (data) {
     echarts.util.each(data.children, function (datum, index) {
-        index % 2 === 0 && (datum.collapsed = true);
+        
     });
     myChart.setOption(option = {
         tooltip: {
@@ -39,8 +39,6 @@ var myChart = echarts.init(document.getElementById('classify'));
                         }
                     }
                 },
-
-                expandAndCollapse: true,
                 animationDuration: 550,
                 animationDurationUpdate: 750
             }

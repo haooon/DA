@@ -140,7 +140,7 @@
                   </p>
               </p>
 
-              <div id="classify" class="ui centered" style="width: 100%;height:2000px;"></div>
+              <div id="classify" class="ui centered" style="width: 120%;height:3500px;"></div>
 
               <!-- <div id="WCI" class="ui container" style="width: 600px;height:500px;"></div>
               <h3 style="margin-top:1.5em;" class="ui big center aligned header smallheader">[微信公众号活跃度结果]</h3> -->
